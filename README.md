@@ -16,3 +16,4 @@ git init
                         OUUUUUUUUUUUUUUUUU
 2.2- git add nome_do_arquivo --> para adicionar apenas um arquivo por vez.
 2.3- git commit -m "Descrição do que foi mudado" --> breve descrição para melhor entendimento.
+2.4- enviar arquivo: git push origin main
