@@ -70,25 +70,6 @@ public class SistemaAvisos {
         }
     }
 
-    private void removerAviso() {
-        if (avisos.isEmpty()) {
-            System.out.println("Nenhum aviso para remover.");
-            return;
-        }
-
-        listarAvisos();
-        System.out.print("Digite o número do aviso que deseja remover: ");
-        int numero = scanner.nextInt();
-        scanner.nextLine(); // Consome a nova linha
-
-        if (numero > 0 && numero <= avisos.size()) {
-            avisos.remove(numero - 1);
-            System.out.println("Aviso removido com sucesso!");
-        } else {
-            System.out.println("Número inválido.");
-        }
-    }
-
     public static void main(String[] args) {
         SistemaAvisos sistema = new SistemaAvisos();
         sistema.iniciar();
