@@ -14,10 +14,6 @@ CREATE TABLE Curso_Cadeiras (
 	FOREIGN KEY (CodCurso) REFERENCES Curso (CodCurso),
 	FOREIGN KEY (CodCadeira) REFERENCES Cadeira (CodCadeira)
 );
-ALTER TABLE Curso ADD Cadeiras int;
-ALTER TABLE Curso ADD FOREIGN KEY (Cadeiras) REFERENCES Curso_Cadeiras(CodCadeira);
-ALTER TABLE Cadeira ADD Cursos int;
-ALTER TABLE Cadeira ADD FOREIGN KEY (Cursos) REFERENCES Curso_Cadeiras(CodCurso);
 CREATE TABLE Aviso (
 	Cabecalho varchar(250),
 	Corpo varchar(2500),
